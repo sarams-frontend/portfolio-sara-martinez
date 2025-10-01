@@ -17,7 +17,7 @@ const Hero = () => {
               <img
                 src={profileImage}
                 alt="Profile"
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl object-cover border-4 border-primary/20 shadow-2xl animate-float transition-transform duration-500 hover:scale-110 hover:rotate-[10deg] cursor-pointer"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl object-cover border-4 border-primary/20 shadow-2xl transition-all duration-700 hover:translate-x-4 cursor-pointer"
               />
             </div>
           </div>

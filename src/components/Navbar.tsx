@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: "Inicio", id: "home" },
     { name: "Stack", id: "stack" },
     { name: "Proyectos", id: "projects" },
+    { name: "Herramientas IA", id: "ai-tools" },
     { name: "Contacto", id: "contact" },
   ];
 
@@ -51,7 +52,7 @@ const Navbar = () => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-foreground/80 hover:text-foreground transition-colors font-medium"
+                className="hover:text-primary transition-colors duration-300"
               >
                 {link.name}
               </button>
@@ -84,7 +85,7 @@ const Navbar = () => {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-left text-foreground/80 hover:text-foreground transition-colors font-medium py-2"
+                  className="text-left hover:text-primary transition-colors duration-300 py-2"
                 >
                   {link.name}
                 </button>
