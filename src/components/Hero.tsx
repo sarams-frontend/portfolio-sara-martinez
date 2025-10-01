@@ -17,7 +17,7 @@ const Hero = () => {
               <img
                 src={profileImage}
                 alt="Profile"
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl object-cover border-4 border-primary/20 shadow-2xl animate-float"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-3xl object-cover border-4 border-primary/20 shadow-2xl animate-float transition-transform duration-500 hover:scale-110 hover:rotate-[10deg] cursor-pointer"
               />
             </div>
           </div>
@@ -26,11 +26,11 @@ const Hero = () => {
           <div className="text-center md:text-left order-2 md:order-1 animate-fade-in">
             <p className="text-primary font-medium mb-4 text-lg">Hola, soy</p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-4">
-              <span className="bg-gradient-primary bg-clip-text text-transparent">
+              <span className="bg-gradient-primary bg-clip-text text-transparent transition-all duration-300 hover:bg-gradient-hover">
                 Desarrolladora
               </span>
               <br />
-              <span className="text-foreground">Frontend</span>
+              <span className="text-foreground transition-all duration-300 hover:bg-gradient-hover hover:bg-clip-text hover:text-transparent">Frontend</span>
             </h1>
             <p className="text-muted-foreground text-lg md:text-xl mb-8 max-w-2xl">
               Creo experiencias digitales responsivas, interactivas y visualmente

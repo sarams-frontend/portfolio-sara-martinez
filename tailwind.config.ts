@@ -104,6 +104,7 @@ export default {
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
         "gradient-card": "var(--gradient-card)",
+        "gradient-hover": "var(--gradient-hover)",
       },
     },
   },
