@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
   darkMode: ["class"],
@@ -99,14 +100,16 @@ export default {
         "fade-in": "fade-in 0.6s ease-out",
         "slide-in": "slide-in 0.6s ease-out",
         "glow": "glow 2s ease-in-out infinite",
-        "float": "float 3s ease-in-out infinite",
+        "float": "float 30s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-primary": "var(--gradient-primary)",
         "gradient-card": "var(--gradient-card)",
         "gradient-hover": "var(--gradient-hover)",
+        "gradient-button": "linear-gradient(135deg, hsl(258 90% 66%), hsl(221 83% 53%))",
+        "gradient-button-hover": "linear-gradient(135deg, #d946ef, #d946ef)",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 } satisfies Config;

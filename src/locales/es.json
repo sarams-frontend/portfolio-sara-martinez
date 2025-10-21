@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "stack": "Stack",
+    "projects": "Proyectos",
+    "aiTools": "Herramientas IA",
+    "contact": "Contacto",
+    "downloadCV": "Descargar CV"
+  },
+  "hero": {
+    "greeting": "Hola, soy Sara Martínez",
+    "title": "Desarrolladora Frontend",
+    "description": "Creo experiencias digitales responsivas, interactivas y visualmente impresionantes, desde sitios web hasta aplicaciones web a gran escala. Mi enfoque es crear interfaces de usuario perfectas que funcionan de maravilla en todos los dispositivos.",
+    "contactMe": "Contáctame",
+    "viewGithub": "Ver GitHub"
+  },
+  "stack": {
+    "title": "Tech Stack",
+    "description": "Tecnologías que uso para dar vida a las ideas"
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "description": "Algunos de mis trabajos recientes que muestran mis habilidades en desarrollo web moderno",
+    "viewDemo": "Ver Demo"
+  },
+  "aiTools": {
+    "title": "Herramientas IA",
+    "description": "Tecnologías de inteligencia artificial que utilizo en mi flujo de trabajo"
+  },
+  "contact": {
+    "title": "Trabajemos Juntos",
+    "subtitle": "¿Tienes un proyecto en mente? Estaré encantada de ayudarte",
+    "contactInfo": "Información de Contacto",
+    "location": "Madrid, España",
+    "followMe": "Sígueme en",
+    "downloadCV": "Descargar CV",
+    "downloadDescription": "Descarga mi CV para conocer más sobre mi experiencia"
+  },
+  "footer": {
+    "copyright": "© 2025 Portfolio. Diseñado y desarrollado con ❤️"
+  }
+}

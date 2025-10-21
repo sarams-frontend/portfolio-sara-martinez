@@ -1,47 +1,42 @@
+import { memo } from "react";
 import { Card } from "@/components/ui/card";
-import { Code2, FileCode, Palette, Triangle, Globe, Paintbrush, Github } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
+import { technologies } from "@/data/technologies";
+import { CONFIG } from "@/constants/config";
+import AnimatedText from "@/components/common/AnimatedText";
 
-const TechStack = () => {
-  const technologies: { name: string; Icon: LucideIcon }[] = [
-    { name: "React", Icon: Code2 },
-    { name: "TypeScript", Icon: FileCode },
-    { name: "JavaScript", Icon: FileCode },
-    { name: "Tailwind CSS", Icon: Palette },
-    { name: "Next.js", Icon: Triangle },
-    { name: "HTML5", Icon: Globe },
-    { name: "CSS3", Icon: Paintbrush },
-    { name: "Git", Icon: Github },
-  ];
+const TechStack = memo(() => {
+  const { t } = useTranslation();
 
   return (
     <section id="stack" className="py-20 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-display font-bold mb-4">
-            <span className="bg-gradient-primary bg-clip-text text-transparent transition-all duration-300 hover:bg-gradient-hover">
-              Tech Stack
-            </span>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold mb-4">
+            <AnimatedText text={t("stack.title")} />
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Tecnologías que uso para dar vida a las ideas
+            {t("stack.description")}
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-5 md:gap-6 max-w-4xl mx-auto">
           {technologies.map((tech, index) => {
             const Icon = tech.Icon;
             return (
               <Card
                 key={tech.name}
-                className="p-6 bg-gradient-card border-border/50 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 animate-fade-in cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="p-4 sm:p-5 md:p-6 border-border/50 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/20 animate-fade-in cursor-pointer relative overflow-hidden"
+                style={{
+                  animationDelay: `${index * CONFIG.ANIMATION_DELAYS.ITEM}s`,
+                  background: `linear-gradient(135deg, ${tech.color}30, ${tech.color}10)`
+                }}
               >
-                <div className="text-center">
+                <div className="text-center relative z-10 transition-transform duration-300 hover:scale-125">
                   <div className="mb-3 flex justify-center">
-                    <Icon className="w-10 h-10 text-primary" />
+                    <Icon className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16" style={{ color: tech.color }} />
                   </div>
-                  <h3 className="font-display font-semibold text-foreground">
+                  <h3 className="font-display font-semibold text-foreground text-xs sm:text-sm">
                     {tech.name}
                   </h3>
                 </div>
@@ -52,6 +47,8 @@ const TechStack = () => {
       </div>
     </section>
   );
-};
+});
+
+TechStack.displayName = "TechStack";
 
 export default TechStack;
