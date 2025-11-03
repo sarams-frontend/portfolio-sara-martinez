@@ -5,7 +5,7 @@ export const CONFIG = {
     EMAIL: "sara.martinez.sanchez.sms@gmail.com",
   },
   CV_PATH: "/cv-sara-martinez.pdf",
-  CV_FILENAME: "CV-Sara-Martinez.pdf",
+  CV_FILENAME: "CV Sara Martínez.pdf",
   ANIMATION_DELAYS: {
     CARD: 0.2,
     ITEM: 0.1,
