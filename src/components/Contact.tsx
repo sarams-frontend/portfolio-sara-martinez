@@ -5,11 +5,13 @@ import { Mail, Github, Linkedin, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { CONFIG } from "@/constants/config";
 import { downloadFile } from "@/lib/download";
+import { logEvent } from "@/lib/analytics";
 
 const Contact = memo(() => {
   const { t } = useTranslation();
 
   const handleDownloadCV = useCallback(() => {
+    logEvent("CV", "download", "Contact section");
     downloadFile(CONFIG.CV_PATH, CONFIG.CV_FILENAME);
   }, []);
 

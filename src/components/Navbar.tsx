@@ -6,6 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { CONFIG } from "@/constants/config";
 import { downloadFile } from "@/lib/download";
+import { logEvent } from "@/lib/analytics";
 
 const Navbar = memo(() => {
   const { t } = useTranslation();
@@ -17,6 +18,11 @@ const Navbar = memo(() => {
     element?.scrollIntoView({ behavior: "smooth" });
     setIsMobileMenuOpen(false);
   }, []);
+
+  const handleDownloadCV = useCallback(() => {
+    logEvent("CV", "download", isMobileMenuOpen ? "Navbar mobile" : "Navbar desktop");
+    downloadFile(CONFIG.CV_PATH, CONFIG.CV_FILENAME);
+  }, [isMobileMenuOpen]);
 
   const navLinks = [
     { name: t("nav.home"), id: "home" },
@@ -59,7 +65,7 @@ const Navbar = memo(() => {
               variant="outline"
               size="sm"
               className="border-transparent text-primary-foreground bg-gradient-button hover:bg-gradient-button-hover transition-all duration-300 hover:scale-110"
-              onClick={() => downloadFile(CONFIG.CV_PATH, CONFIG.CV_FILENAME)}
+              onClick={handleDownloadCV}
             >
               <Download className="w-4 h-4 mr-2" />
               {t("nav.downloadCV")}
@@ -94,7 +100,7 @@ const Navbar = memo(() => {
                 variant="outline"
                 size="default"
                 className="border-transparent text-primary-foreground bg-gradient-button hover:bg-gradient-button-hover transition-all duration-300 w-full hover:scale-105 min-h-[44px]"
-                onClick={() => downloadFile(CONFIG.CV_PATH, CONFIG.CV_FILENAME)}
+                onClick={handleDownloadCV}
               >
                 <Download className="w-4 h-4 mr-2" />
                 {t("nav.downloadCV")}
