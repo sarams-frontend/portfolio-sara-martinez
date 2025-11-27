@@ -7,7 +7,7 @@ export const projects: Project[] = [
     description: "Modern SaaS for IT data visualization with interactive charts and data analytics.",
     image: "/project-dashboard-analytics.png",
     tags: ["React", "TypeScript", "Tailwind"],
-    liveUrl: "https://free-react-tailwind-dashboard.netlify.app",
+    liveUrl: "https://dashboard-snsorial.netlify.app",
     githubUrl: "https://github.com/sarams-frontend/free-react-tailwind-admin-dashboard-main",
     isDisabled: false,
   },
