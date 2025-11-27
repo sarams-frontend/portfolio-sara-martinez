@@ -3,7 +3,7 @@ import type { Project } from "@/types";
 export const projects: Project[] = [
   {
     id: "dashboard-analytics",
-    title: "Dashboard Analytics",
+    title: "Dashboard Snsorial",
     description: "Modern SaaS for IT data visualization with interactive charts and data analytics.",
     image: "/project-dashboard-analytics.png",
     tags: ["React", "TypeScript", "Tailwind"],
