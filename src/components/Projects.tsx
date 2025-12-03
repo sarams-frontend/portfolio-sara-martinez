@@ -34,7 +34,7 @@ const Projects = memo(() => {
           {projects.map((project, index) => (
             <Card
               key={project.id}
-              className={`overflow-hidden bg-gradient-card border-border/50 transition-all duration-300 animate-fade-in group ${
+              className={`overflow-hidden bg-gradient-card border-border/50 transition-all duration-300 animate-fade-in group flex flex-col h-full ${
                 project.isDisabled
                   ? ""
                   : "hover:border-primary/50 hover:scale-105 hover:shadow-2xl hover:shadow-primary/20"
@@ -56,15 +56,15 @@ const Projects = memo(() => {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <div className="p-4 sm:p-5 md:p-6">
+              <div className="p-4 sm:p-5 md:p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-display font-bold mb-2 text-foreground">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground mb-4 text-sm">
+                <p className="text-muted-foreground mb-4 text-sm flex-grow">
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4 min-h-[32px]">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
@@ -75,7 +75,7 @@ const Projects = memo(() => {
                   ))}
                 </div>
 
-                <div className="flex gap-3">
+                <div className="flex gap-3 mt-auto">
                   <Button
                     variant="outline"
                     size="sm"
