@@ -46,10 +46,10 @@ const Projects = memo(() => {
                   src={project.image}
                   alt={project.title}
                   loading="lazy"
-                  className={`w-full h-40 sm:h-48 md:h-52 transition-transform duration-500 ${
+                  className={`w-full h-40 sm:h-48 md:h-52 transition-transform duration-500 object-contain bg-background ${
                     project.isDisabled
-                      ? "object-contain"
-                      : "object-cover group-hover:scale-110"
+                      ? ""
+                      : "group-hover:scale-105"
                   }`}
                   style={project.isDisabled ? { opacity: 0.7 } : {}}
                 />
@@ -60,11 +60,11 @@ const Projects = memo(() => {
                 <h3 className="text-xl font-display font-bold mb-2 text-foreground">
                   {t(`projects.items.${project.id}.title`, project.title)}
                 </h3>
-                <p className="text-muted-foreground mb-4 text-sm flex-grow">
+                <p className="text-muted-foreground mb-3 text-sm">
                   {t(`projects.items.${project.id}.description`, project.description)}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-4 min-h-[32px]">
+                <div className="flex flex-wrap gap-1.5 mb-4">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
