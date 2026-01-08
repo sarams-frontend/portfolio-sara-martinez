@@ -58,10 +58,10 @@ const Projects = memo(() => {
 
               <div className="p-4 sm:p-5 md:p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-display font-bold mb-2 text-foreground">
-                  {project.title}
+                  {t(`projects.items.${project.id}.title`, project.title)}
                 </h3>
                 <p className="text-muted-foreground mb-4 text-sm flex-grow">
-                  {project.description}
+                  {t(`projects.items.${project.id}.description`, project.description)}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-4 min-h-[32px]">

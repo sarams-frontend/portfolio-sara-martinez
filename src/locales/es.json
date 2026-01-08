@@ -21,7 +21,21 @@
   "projects": {
     "title": "Mis Proyectos",
     "description": "Algunos de mis trabajos recientes que muestran mis habilidades en desarrollo web moderno",
-    "viewDemo": "Ver Demo"
+    "viewDemo": "Ver Demo",
+    "items": {
+      "dashboard-analytics": {
+        "title": "Dashboard Snsorial",
+        "description": "SaaS moderno para visualización de datos IT con gráficos interactivos y análisis de datos."
+      },
+      "instagram-analytics": {
+        "title": "Instagram Analytics",
+        "description": "Analiza influencers de Instagram con métricas detalladas, análisis de audiencia y estadísticas de engagement."
+      },
+      "layla-ai-legaltech": {
+        "title": "Layla AI Legal Tech",
+        "description": "Plataforma SaaS LegalTech para gestión de expedientes de clientes bajo la Ley de Segunda Oportunidad en España, con flujos de trabajo potenciados por IA."
+      }
+    }
   },
   "aiTools": {
     "title": "Herramientas IA",
