@@ -4,8 +4,8 @@ export const CONFIG = {
     LINKEDIN: "https://www.linkedin.com/in/sara-martinez-sanchez",
     EMAIL: "sara.martinez.sanchez.sms@gmail.com",
   },
-  CV_PATH: "/cv-sara-martinez.pdf",
-  CV_FILENAME: "CV Sara Martínez.pdf",
+  CV_PATH: "/CV Sara Martinez ES.pdf",
+  CV_FILENAME: "CV Sara Martinez ES.pdf",
   ANIMATION_DELAYS: {
     CARD: 0.2,
     ITEM: 0.1,
