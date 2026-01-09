@@ -16,7 +16,7 @@
   },
   "stack": {
     "title": "Tech Stack",
-    "description": "Tecnologías que uso para dar vida a las ideas"
+    "description": "Tecnologías que utilizo en el desarrollo de productos digitales y aplicaciones web."
   },
   "featuredProject": {
     "sectionTitle": "Iniciativa Profesional",
@@ -39,7 +39,7 @@
   },
   "projects": {
     "title": "Mis Proyectos",
-    "description": "Algunos de mis trabajos recientes que muestran mis habilidades en desarrollo web moderno",
+    "description": "Selección de proyectos representativos de mi trabajo en desarrollo de productos digitales.",
     "viewDemo": "Ver Demo",
     "items": {
       "dashboard-analytics": {
