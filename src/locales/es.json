@@ -19,14 +19,14 @@
     "description": "Tecnologías que uso para dar vida a las ideas"
   },
   "featuredProject": {
-    "sectionTitle": "Proyecto Destacado",
-    "sectionDescription": "Mi proyecto principal donde combino desarrollo frontend, arquitectura SaaS e inteligencia artificial",
+    "sectionTitle": "Producto Propio",
+    "sectionDescription": "Startup en desarrollo donde aplico desarrollo frontend, arquitectura SaaS e inteligencia artificial",
     "title": "Layla — Plataforma SaaS LegalTech con IA",
     "subtitle": "Product Engineer · Frontend Lead · Founder",
     "description": "Desarrollo desde cero de una plataforma SaaS LegalTech para la gestión de expedientes de la Ley de Segunda Oportunidad en España, automatizando flujos internos y generación de documentación legal mediante IA.",
     "extendedTitle": "Sobre el Proyecto",
     "extendedDescription": "Layla es un producto SaaS LegalTech orientado a empresas del sector legal en España, diseñado para centralizar y automatizar la gestión de expedientes de la Ley de Segunda Oportunidad. Desarrollo el producto de forma integral desde cero, trabajando principalmente el frontend y la experiencia de usuario, pero incorporando nociones de arquitectura SaaS, bases de datos en la nube, despliegue y servicios de Inteligencia Artificial. El proyecto se valida de forma continua con usuarios reales del sector legal.",
-    "responsibilitiesTitle": "Qué hago en el proyecto",
+    "responsibilitiesTitle": "Áreas de Responsabilidad",
     "responsibilities": {
       "design": "Diseño y desarrollo del producto de 0 a 1.",
       "architecture": "Arquitectura frontend y design system reutilizable.",
