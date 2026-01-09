@@ -1,9 +1,11 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
+import ImageModal from "@/components/ImageModal";
 
 const FeaturedProject = memo(() => {
   const { t } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const technologies = [
     "React", "TypeScript", "Tailwind", "PostgreSQL", "Supabase", "OpenAI", "Eleven Labs", "Vercel"
@@ -40,13 +42,21 @@ const FeaturedProject = memo(() => {
               <div className="flex flex-col lg:flex-row gap-6 lg:gap-8">
                 {/* Imagen del proyecto */}
                 <div className="lg:w-1/2">
-                  <div className="relative overflow-hidden rounded-lg">
+                  <div
+                    className="relative overflow-hidden rounded-lg cursor-pointer group"
+                    onClick={() => setIsModalOpen(true)}
+                  >
                     <img
                       src="/crm-layla-ai.png"
                       alt="Layla AI Legal Tech"
                       loading="lazy"
-                      className="w-full h-auto object-contain bg-background rounded-lg"
+                      className="w-full h-auto object-contain bg-background rounded-lg transition-transform duration-300 group-hover:scale-105"
                     />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                      <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
+                        Click para ampliar
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -107,6 +117,13 @@ const FeaturedProject = memo(() => {
           </Card>
         </div>
       </div>
+
+      <ImageModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        imageSrc="/crm-layla-ai.png"
+        imageAlt="Layla AI Legal Tech"
+      />
     </section>
   );
 });

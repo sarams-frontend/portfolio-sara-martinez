@@ -1,4 +1,4 @@
-import { memo, useCallback } from "react";
+import { memo, useCallback, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
@@ -6,14 +6,21 @@ import { useTranslation } from "react-i18next";
 import { projects } from "@/data/projects";
 import { CONFIG } from "@/constants/config";
 import { openExternalLink } from "@/lib/navigation";
+import ImageModal from "@/components/ImageModal";
 
 const Projects = memo(() => {
   const { t } = useTranslation();
+  const [modalImage, setModalImage] = useState<{ src: string; alt: string } | null>(null);
 
   const handleProjectClick = useCallback((url: string, isDisabled?: boolean) => {
     if (!isDisabled) {
       openExternalLink(url);
     }
+  }, []);
+
+  const handleImageClick = useCallback((e: React.MouseEvent, imageSrc: string, imageAlt: string) => {
+    e.stopPropagation();
+    setModalImage({ src: imageSrc, alt: imageAlt });
   }, []);
 
   return (
@@ -41,7 +48,10 @@ const Projects = memo(() => {
               }`}
               style={{ animationDelay: `${index * CONFIG.ANIMATION_DELAYS.CARD}s` }}
             >
-              <div className="relative overflow-hidden">
+              <div
+                className="relative overflow-hidden cursor-pointer"
+                onClick={(e) => handleImageClick(e, project.image, project.title)}
+              >
                 <img
                   src={project.image}
                   alt={project.title}
@@ -53,7 +63,9 @@ const Projects = memo(() => {
                   }`}
                   style={project.isDisabled ? { opacity: 0.7 } : {}}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="text-white text-sm font-medium">Click para ampliar</span>
+                </div>
               </div>
 
               <div className="p-4 sm:p-5 md:p-6 flex flex-col flex-grow">
@@ -111,6 +123,13 @@ const Projects = memo(() => {
           ))}
         </div>
       </div>
+
+      <ImageModal
+        isOpen={modalImage !== null}
+        onClose={() => setModalImage(null)}
+        imageSrc={modalImage?.src || ""}
+        imageAlt={modalImage?.alt || ""}
+      />
     </section>
   );
 });
