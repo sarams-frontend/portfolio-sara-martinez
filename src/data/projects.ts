@@ -21,14 +21,4 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/sarams-frontend/instagram-analytics",
     isDisabled: false,
   },
-  {
-    id: "layla-ai-legaltech",
-    title: "Layla AI Legal Tech",
-    description: "SaaS LegalTech platform for managing client cases under Spain's Second Chance Law, with AI-powered workflows across legal departments.",
-    image: "/crm-layla-ai.png",
-    tags: ["React", "TypeScript", "Tailwind", "PostgreSQL", "Supabase", "OpenAI", "Eleven Labs"],
-    liveUrl: "https://layla-ai.com",
-    githubUrl: "https://github.com/sarams-frontend/layla-ai",
-    isDisabled: true,
-  },
 ];
