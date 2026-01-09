@@ -15,7 +15,7 @@ export const aiTools: AITool[] = [
     color: "#D97706",
   },
   {
-    name: "ChatGPT",
+    name: "OpenAI",
     Icon: SiOpenai,
     color: "#10A37F",
   },
