@@ -19,7 +19,7 @@
     "description": "Technologies I use to bring ideas to life"
   },
   "featuredProject": {
-    "sectionTitle": "Own Product",
+    "sectionTitle": "Professional Initiative",
     "sectionDescription": "Startup in development where I apply frontend development, SaaS architecture and artificial intelligence",
     "title": "Layla — SaaS LegalTech Platform with AI",
     "subtitle": "Product Engineer · Frontend Lead · Founder",
@@ -28,13 +28,13 @@
     "extendedDescription": "Layla is a SaaS LegalTech product aimed at legal sector companies in Spain, designed to centralize and automate the management of Second Chance Law cases. I develop the product entirely from scratch, primarily working on the frontend and user experience, while incorporating SaaS architecture concepts, cloud databases, deployment, and AI services. The project is continuously validated with real users in the legal sector.",
     "responsibilitiesTitle": "Areas of Responsibility",
     "responsibilities": {
-      "design": "Product design and development from 0 to 1.",
-      "architecture": "Frontend architecture and reusable design system.",
-      "flows": "Implementation of complex role-based flows (multi-company).",
-      "ai": "Integration of AI services for legal documentation generation.",
-      "database": "Integration with PostgreSQL database on Supabase.",
-      "deployment": "Cloud deployment configuration with Vercel.",
-      "discovery": "Product discovery, testing and continuous improvement with real users."
+      "design": "Participation in the functional, technical and user experience design of the product.",
+      "architecture": "Design and development from 0 to 1 with Lovable and Bolt.new, building the CRM structure based on Figma designs.",
+      "flows": "Development of visual components, scalable architecture, API First and multitenant with VSC + Claude Code.",
+      "ai": "Integration of Artificial Intelligence services for assisted generation of summaries, reports and legal drafts, supporting traditionally manual processes and significantly reducing operational workload.",
+      "database": "REST API integration with PostgreSQL database on Supabase.",
+      "deployment": "Cloud deployment environment configuration with Vercel, managing continuous deployment workflows.",
+      "discovery": "Client relations. Product Discovery, testing and continuous feature development."
     }
   },
   "projects": {

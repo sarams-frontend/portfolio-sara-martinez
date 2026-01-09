@@ -19,7 +19,7 @@
     "description": "Tecnologías que uso para dar vida a las ideas"
   },
   "featuredProject": {
-    "sectionTitle": "Producto Propio",
+    "sectionTitle": "Iniciativa Profesional",
     "sectionDescription": "Startup en desarrollo donde aplico desarrollo frontend, arquitectura SaaS e inteligencia artificial",
     "title": "Layla — Plataforma SaaS LegalTech con IA",
     "subtitle": "Product Engineer · Frontend Lead · Founder",
@@ -28,13 +28,13 @@
     "extendedDescription": "Layla es un producto SaaS LegalTech orientado a empresas del sector legal en España, diseñado para centralizar y automatizar la gestión de expedientes de la Ley de Segunda Oportunidad. Desarrollo el producto de forma integral desde cero, trabajando principalmente el frontend y la experiencia de usuario, pero incorporando nociones de arquitectura SaaS, bases de datos en la nube, despliegue y servicios de Inteligencia Artificial. El proyecto se valida de forma continua con usuarios reales del sector legal.",
     "responsibilitiesTitle": "Áreas de Responsabilidad",
     "responsibilities": {
-      "design": "Diseño y desarrollo del producto de 0 a 1.",
-      "architecture": "Arquitectura frontend y design system reutilizable.",
-      "flows": "Implementación de flujos complejos por rol (multiempresa).",
-      "ai": "Integración de servicios de IA para generación de documentación legal.",
-      "database": "Integración con base de datos PostgreSQL en Supabase.",
-      "deployment": "Configuración de despliegue en la nube con Vercel.",
-      "discovery": "Product discovery, testing y mejora continua con usuarios reales."
+      "design": "Participación en el diseño funcional, técnico y de experiencia de usuario del producto.",
+      "architecture": "Diseño y desarrollo de 0 a 1 con Lovable y Bolt.new, construyendo la estructura del CRM basado en diseños Figma.",
+      "flows": "Desarrollo de componentes visuales, arquitectura escalable, API First y multitenant con VSC + Claude Code.",
+      "ai": "Integración de servicios de Inteligencia Artificial para la generación asistida de resúmenes, memorias y borradores legales, apoyando procesos tradicionalmente manuales y reduciendo significativamente la carga operativa.",
+      "database": "Integración de APIs REST con base de datos PostgreSQL en Supabase.",
+      "deployment": "Configuración de entornos de despliegue en la nube mediante Vercel, gestionando flujos de despliegue continuo.",
+      "discovery": "Relación con clientes. Product Discovery, testing y desarrollo continuo de funcionalidades."
     }
   },
   "projects": {
