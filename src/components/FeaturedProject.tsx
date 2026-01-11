@@ -1,6 +1,7 @@
 import { memo, useState } from "react";
 import { Card } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
+import { ExternalLink } from "lucide-react";
 import ImageModal from "@/components/ImageModal";
 
 const FeaturedProject = memo(() => {
@@ -58,6 +59,15 @@ const FeaturedProject = memo(() => {
                       </span>
                     </div>
                   </div>
+                  <a
+                    href="https://laylalegaltech.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors duration-300 font-medium"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    www.laylalegaltech.com
+                  </a>
                 </div>
 
                 {/* Info del proyecto */}
